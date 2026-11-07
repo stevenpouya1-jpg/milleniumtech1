@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071426">
+<meta name="description" content="MILLENIUM TECH à Ouagadougou : informatique, accessoires, maintenance, installation de logiciels et jeux vidéo sur PC.">
+<title>MILLENIUM TECH | Informatique & Technologie</title>
+<style>
+:root{--bg:#071426;--panel:#0d2038;--panel2:#102943;--blue:#1677ff;--cyan:#25d5e6;--text:#f4f8ff;--muted:#a9bad0;--line:#ffffff18;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f8fc;color:#15243a;font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#071426f2;color:white;border-bottom:1px solid #ffffff16;backdrop-filter:blur(14px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.4px}.logo-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-weight:1000;font-size:20px;box-shadow:0 8px 25px #1677ff55}.logo small{display:block;color:#91a9c5;font-size:10px;letter-spacing:2px;font-weight:700;margin-top:-4px}
+.navlinks{display:flex;gap:24px;align-items:center;font-size:14px;color:#dce7f5}.navlinks a:hover{color:var(--cyan)}.menu{display:none;background:none;color:white;border:1px solid #ffffff40;border-radius:9px;padding:8px 11px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:0;border-radius:10px;padding:13px 19px;background:linear-gradient(100deg,var(--blue),#238fe9);color:white;font-weight:800;cursor:pointer;box-shadow:0 9px 22px #1677ff30;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.ghost{background:transparent;border:1px solid #ffffff55;box-shadow:none}.btn.dark{background:#0b1e34;box-shadow:none}.btn.small{padding:10px 14px;font-size:13px}
+.hero{color:white;background:radial-gradient(ellipse at 80% 25%,#1677ff45,transparent 33%),radial-gradient(ellipse at 15% 90%,#25d5e622,transparent 35%),linear-gradient(120deg,#071426,#0c2340 65%,#0a3150);padding:90px 0 84px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#66e8f1;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:900}.eyebrow:before{content:"";width:25px;height:2px;background:var(--cyan)}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2px;margin:18px 0 20px}.gradient{background:linear-gradient(90deg,#fff,#5de3f2);background-clip:text;color:transparent}.hero p{color:#c0d0e3;max-width:590px;font-size:18px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:25px;flex-wrap:wrap;margin-top:36px;color:#b5c7dc;font-size:13px}.trust b{color:white}.visual{min-height:350px;display:grid;place-items:center;position:relative}.orb{position:absolute;width:310px;height:310px;border-radius:50%;background:linear-gradient(135deg,#1677ff70,#25d5e630);filter:blur(2px)}.device{position:relative;width:min(390px,100%);padding:25px;border:1px solid #ffffff35;border-radius:25px;background:linear-gradient(145deg,#ffffff20,#ffffff08);box-shadow:0 30px 80px #0007;backdrop-filter:blur(12px);transform:rotate(-3deg)}.device-top{display:flex;gap:6px;margin-bottom:22px}.dot{width:8px;height:8px;border-radius:50%;background:#6c8aaa}.screen{border-radius:16px;background:#09192c;padding:23px}.screen-label{color:#7f9bb9;font-size:11px;letter-spacing:2px}.screen h3{color:white;font-size:25px;margin:8px 0}.screen p{font-size:13px;margin:0;color:#a9bdd3}.screen-icons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.screen-icons span{background:#142d49;border:1px solid #ffffff12;border-radius:12px;padding:14px 5px;text-align:center;font-size:24px}.screen-icons small{display:block;color:#c5d4e5;font-size:10px}
+section{padding:78px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}.kicker{color:#1677ff;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(29px,4vw,42px);line-height:1.15;margin:9px 0 12px;color:#10243d;letter-spacing:-1px}.section-head p{color:#63758b;margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:white;border:1px solid #e7edf5;border-radius:17px;padding:25px;box-shadow:0 10px 30px #0d29400a;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:0 16px 35px #0d294018}.ico{width:49px;height:49px;border-radius:14px;background:#eaf3ff;display:grid;place-items:center;font-size:24px;margin-bottom:17px}.service h3{margin:0 0 7px;font-size:18px}.service p{color:#687a90;font-size:14px;margin:0}
+.products{background:#edf3fa}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:white;border:1px solid #e2eaf3;border-radius:17px;overflow:hidden}.product-art{height:155px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#d7eaff,#edf5ff 68%);font-size:65px}.product-info{padding:19px}.product-info h3{margin:0 0 5px;font-size:17px}.product-info p{color:#718198;font-size:13px;margin:0 0 15px}.product-info .btn{width:100%}.tag{display:inline-block;background:#eaf3ff;color:#1766c8;padding:4px 9px;border-radius:30px;font-size:10px;font-weight:900;letter-spacing:.6px;text-transform:uppercase;margin-bottom:9px}
+.games{background:linear-gradient(110deg,#08182c,#102f52);color:white}.games-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.games h2{font-size:clamp(30px,4vw,44px);line-height:1.12;margin:10px 0 15px}.games p{color:#b8cbe0}.game-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.game-list div{padding:12px;background:#ffffff0d;border:1px solid #ffffff17;border-radius:10px;color:#e6f0fc;font-size:13px}.game-art{min-height:280px;border-radius:22px;border:1px solid #ffffff25;background:radial-gradient(circle at 50% 35%,#1677ff66,transparent 45%),linear-gradient(145deg,#173e68,#0a1c31);display:grid;place-items:center;font-size:105px;box-shadow:0 25px 60px #0004}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center}.about-card{padding:30px;border-radius:20px;background:linear-gradient(145deg,#0a1d34,#12395e);color:white;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}.about-card strong{font-size:29px;line-height:1.2}.about-card span{color:#8feaf2;font-size:12px;letter-spacing:2px;font-weight:800}.about-copy h2{font-size:35px;line-height:1.15;margin:8px 0 14px}.about-copy p{color:#687a90}.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.checks span{font-size:14px;font-weight:700}.checks span:before{content:"✓";color:#1677ff;font-weight:1000;margin-right:8px}
+.contact{background:#edf3fa}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}.contact-info{background:#0b2039;color:white;padding:28px;border-radius:18px}.contact-info h3{font-size:23px;margin:0 0 17px}.contact-line{padding:15px 0;border-bottom:1px solid #ffffff1a}.contact-line small{display:block;color:#91a8c3;font-size:11px;text-transform:uppercase;letter-spacing:1px}.contact-line a,.contact-line strong{font-weight:700}.contact-form{background:white;padding:28px;border-radius:18px;border:1px solid #e2eaf3}.contact-form h3{margin:0 0 18px}.field{margin-bottom:13px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px;color:#40536b}.field input,.field textarea,.field select{width:100%;padding:12px 13px;border:1px solid #dbe4ef;border-radius:9px;background:#fbfdff;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:#1677ff;box-shadow:0 0 0 3px #1677ff18}.field textarea{min-height:95px;resize:vertical}.contact-form .btn{width:100%}
+footer{background:#061326;color:#c0cede;padding:32px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer-row p{font-size:12px;color:#8296ad;margin:5px 0 0}.footer-links{display:flex;gap:18px;font-size:13px}.wa-float{position:fixed;right:19px;bottom:19px;z-index:30;background:#16b85a;color:white;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;font-size:27px;box-shadow:0 8px 25px #0003}
+@media(max-width:800px){.navlinks{display:none;position:absolute;left:0;right:0;top:76px;background:#071426;padding:20px 4%;flex-direction:column;align-items:flex-start;border-top:1px solid #ffffff18}.navlinks.open{display:flex}.menu{display:block}.nav>.btn{display:none}.hero{padding:65px 0}.hero-grid,.games-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.visual{min-height:300px}.services,.product-grid{grid-template-columns:repeat(2,1fr)}.games-grid{gap:25px}.game-art{min-height:210px}.about-card{min-height:210px}}
+@media(max-width:520px){section{padding:58px 0}.services,.product-grid{grid-template-columns:1fr}.hero p{font-size:16px}.trust{gap:12px}.checks{grid-template-columns:1fr}.device{transform:none}.footer-row{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#accueil"><span class="logo-mark">M</span><span>MILLENIUM TECH<small>INFORMATIQUE & TECHNOLOGIE</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+  <nav class="navlinks" id="navlinks"><a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#produits">Produits</a><a href="#jeux">Jeux PC</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
+  <a class="btn small" href="#contact">Nous contacter ↗</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="accueil">
+ <div class="wrap hero-grid">
+  <div><span class="eyebrow">Votre partenaire numérique à Ouagadougou</span>
+   <h1>La technologie<br><span class="gradient">à votre portée.</span></h1>
+   <p>Bienvenue chez MILLENIUM TECH. Des solutions informatiques fiables, de l'assistance technique à l'installation de vos logiciels et jeux vidéo sur PC.</p>
+   <div class="actions"><a class="btn" href="#services">Découvrir nos services →</a><a class="btn ghost" href="#contact">Demander un renseignement</a></div>
+   <div class="trust"><span>✓ <b>Conseils personnalisés</b></span><span>✓ <b>Assistance informatique</b></span><span>✓ <b>À Ouagadougou</b></span></div>
+  </div>
+  <div class="visual"><div class="orb"></div><div class="device"><div class="device-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="screen"><div class="screen-label">MILLENIUM TECH / DIGITAL</div><h3>Tout votre univers<br>informatique.</h3><p>Équipement · Maintenance · Installation</p><div class="screen-icons"><span>💻<small>PC</small></span><span>🛠️<small>Support</small></span><span>🎮<small>Gaming</small></span></div></div></div></div>
+ </div>
+</section>
+<section id="services"><div class="wrap"><div class="section-head"><span class="kicker">Ce que nous faisons</span><h2>Nos services informatiques</h2><p>Un accompagnement pratique pour vos équipements et vos besoins numériques.</p></div>
+ <div class="services">
+  <article class="service"><div class="ico">💻</div><h3>Ordinateurs & accessoires</h3><p>Vente d'ordinateurs et d'accessoires informatiques selon vos besoins.</p></article>
+  <article class="service"><div class="ico">🔌</div><h3>Accessoires électroniques</h3><p>Chargeurs, écouteurs, câbles USB et accessoires utiles au quotidien.</p></article>
+  <article class="service"><div class="ico">🛠️</div><h3>Maintenance & réparation</h3><p>Diagnostic, entretien et assistance pour vos téléphones et équipements.</p></article>
+  <article class="service"><div class="ico">🖥️</div><h3>Logiciels & systèmes</h3><p>Installation et configuration de logiciels et de systèmes informatiques.</p></article>
+  <article class="service"><div class="ico">🎮</div><h3>Installation de jeux vidéo PC</h3><p>Installation et configuration de jeux sur PC, selon la compatibilité de votre machine.</p></article>
+  <article class="service"><div class="ico">🧑‍💻</div><h3>Assistance informatique</h3><p>Conseils, aide à la prise en main et accompagnement pour vos problèmes informatiques.</p></article>
+ </div></div></section>
+<section class="products" id="produits"><div class="wrap"><div class="section-head"><span class="kicker">Notre sélection</span><h2>Produits & accessoires</h2><p>Contactez-nous pour connaître la disponibilité et les tarifs.</p></div>
+ <div class="product-grid">
+  <article class="product"><div class="product-art">💻</div><div class="product-info"><span class="tag">Informatique</span><h3>Ordinateurs portables</h3><p>Équipements pour le travail, les études et les loisirs.</p><a class="btn small order" data-item="Ordinateurs portables" href="#contact">Demander le prix</a></div></article>
+  <article class="product"><div class="product-art">⌨️</div><div class="product-info"><span class="tag">Accessoires PC</span><h3>Claviers & souris</h3><p>Accessoires pour améliorer votre confort d'utilisation.</p><a class="btn small order" data-item="Claviers et souris" href="#contact">Demander le prix</a></div></article>
+  <article class="product"><div class="product-art">🎧</div><div class="product-info"><span class="tag">Audio</span><h3>Écouteurs & casques</h3><p>Des accessoires audio pour vos appels et vos loisirs.</p><a class="btn small order" data-item="Écouteurs et casques" href="#contact">Demander le prix</a></div></article>
+  <article class="product"><div class="product-art">🔋</div><div class="product-info"><span class="tag">Énergie</span><h3>Chargeurs & batteries</h3><p>Accessoires d'alimentation et câbles de connexion.</p><a class="btn small order" data-item="Chargeurs et batteries" href="#contact">Demander le prix</a></div></article>
+  <article class="product"><div class="product-art">🔌</div><div class="product-info"><span class="tag">Connectique</span><h3>Câbles & adaptateurs</h3><p>Solutions de connexion pour vos appareils.</p><a class="btn small order" data-item="Câbles et adaptateurs" href="#contact">Demander le prix</a></div></article>
+  <article class="product"><div class="product-art">🧰</div><div class="product-info"><span class="tag">Service</span><h3>Installation & configuration</h3><p>Faites-nous part de votre besoin pour obtenir un devis.</p><a class="btn small order" data-item="Installation et configuration" href="#contact">Demander un devis</a></div></article>
+ </div></div></section>
+<section class="games" id="jeux"><div class="wrap games-grid"><div><span class="eyebrow">Espace gaming</span><h2>Vos jeux vidéo PC, prêts à jouer.</h2><p>MILLENIUM TECH vous accompagne pour l'installation et la configuration de jeux vidéo sur ordinateur. La faisabilité dépend des caractéristiques du PC et des exigences du jeu.</p><div class="game-list"><div>🎮 Vérification de compatibilité</div><div>⚙️ Installation du jeu</div><div>🖥️ Configuration graphique</div><div>🚀 Conseils de performance</div></div><a class="btn" href="#contact">Parler de mon PC →</a></div><div class="game-art">🎮</div></div></section>
+<section id="apropos"><div class="wrap about-grid"><div class="about-card"><span>QUI SOMMES-NOUS ?</span><strong>La passion de la technologie, au service de vos besoins.</strong><span>MILLENIUM TECH · OUAGADOUGOU</span></div><div class="about-copy"><span class="kicker">À propos de nous</span><h2>Un partenaire pour vos projets informatiques.</h2><p>MILLENIUM TECH accompagne particuliers, élèves, étudiants et professionnels dans leurs besoins en informatique, maintenance et installation de logiciels et de jeux PC.</p><div class="checks"><span>Accueil et écoute</span><span>Conseils adaptés</span><span>Services informatiques</span><span>Assistance technique</span></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><span class="kicker">Restons en contact</span><h2>Parlons de votre besoin</h2><p>Appelez-nous ou envoyez votre demande. Nous serons heureux de vous renseigner.</p></div>
+ <div class="contact-grid"><div class="contact-info"><h3>Coordonnées</h3>
+  <div class="contact-line"><small>Téléphone 1</small><a href="tel:+22673398930">+226 73 39 89 30</a></div>
+  <div class="contact-line"><small>Téléphone 2</small><a href="tel:+22678893154">+226 78 89 31 54</a></div>
+  <div class="contact-line"><small>Adresse</small><strong>Non loin du marché de Zone 1, Ouagadougou, Burkina Faso</strong></div>
+  <div class="contact-line"><small>Horaires</small><strong>Contactez-nous pour connaître les horaires d'ouverture.</strong></div>
+  <p style="font-size:12px;color:#8fa8c4;margin-top:18px">Repère : marché de Zone 1, Ouagadougou.</p>
+  <a class="btn small" style="margin-top:8px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=March%C3%A9+de+Zone+1+Ouagadougou">Voir le secteur sur la carte ↗</a>
+ </div>
+ <form class="contact-form" id="contactForm"><h3>Envoyer une demande</h3>
+  <div class="field"><label for="name">Votre nom</label><input id="name" name="name" placeholder="Nom et prénom" required></div>
+  <div class="field"><label for="phone">Votre numéro</label><input id="phone" name="phone" placeholder="Votre numéro de téléphone"></div>
+  <div class="field"><label for="subject">Votre demande</label><select id="subject" name="subject"><option>Demande d'information</option><option>Ordinateur ou accessoire</option><option>Maintenance / réparation</option><option>Installation de logiciel</option><option>Installation de jeu PC</option></select></div>
+  <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Décrivez votre besoin..." required></textarea></div>
+  <button class="btn" type="submit">Envoyer la demande sur WhatsApp ↗</button>
+  <p style="font-size:11px;color:#7b8ca1;margin:10px 0 0">Le bouton prépare un message WhatsApp sur le premier numéro de contact.</p>
+ </form></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><a class="logo" href="#accueil"><span class="logo-mark">M</span><span>MILLENIUM TECH<small>INFORMATIQUE & TECHNOLOGIE</small></span></a><p>La technologie à votre portée.</p></div><div class="footer-links"><a href="#services">Services</a><a href="#produits">Produits</a><a href="#contact">Contact</a></div><p>© <span id="year"></span> MILLENIUM TECH. Tous droits réservés.</p></div></footer>
+<a class="wa-float" href="https://wa.me/22673398930" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">✆</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.order').forEach(a=>a.addEventListener('click',()=>{document.getElementById('subject').value='Demande d\\'information';document.getElementById('message').value='Bonjour MILLENIUM TECH, je souhaite connaître le prix et la disponibilité : '+a.dataset.item+'.';}));
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),subject=document.getElementById('subject').value,message=document.getElementById('message').value.trim();
+ const text=`Bonjour MILLENIUM TECH !%0AJe m'appelle ${encodeURIComponent(name)}.%0AMon numéro : ${encodeURIComponent(phone||'Non précisé')}%0ASujet : ${encodeURIComponent(subject)}%0AMessage : ${encodeURIComponent(message)}`;
+ window.open('https://wa.me/22673398930?text='+text,'_blank','noopener');
+});
+</script>
+</body></html>
